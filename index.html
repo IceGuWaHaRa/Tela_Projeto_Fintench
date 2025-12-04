@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Wallbank - Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+
+    <header class="p-3 shadow-sm d-flex align-items-center justify-content-between header-yellow">
+        <div class="me-3">
+            <h1 class="fw-bold m-0">E-Wallbank</h1>
+            <small class="text-dark">Bem-vindo de volta!</small>
+        </div>
+
+        <div class="flex-grow-1 d-flex justify-content-center">
+            <div class="input-group search-bar">
+                <span class="input-group-text bg-white border-end-0">
+                    <i class="bi bi-search"></i>
+                </span>
+                <input type="search" class="form-control border-start-0" placeholder="O que está procurando?">
+            </div>
+        </div>
+
+        <i class="bi bi-list fs-1 ms-3"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuLateral"
+            style="cursor:pointer; color:#000;">
+        </i>
+    </header>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-white">Configurações</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between text-white">Perfil <i class="bi bi-person-circle"></i></li>
+                <li class="list-group-item d-flex justify-content-between text-white">Meus cartões <i class="bi bi-credit-card"></i></li>
+                <li class="list-group-item d-flex justify-content-between text-white">Limites PIX <i class="bi bi-cash-coin"></i></li>
+                <li class="list-group-item d-flex justify-content-between text-white">Segurança <i class="bi bi-shield-lock"></i></li>
+                <li class="list-group-item d-flex justify-content-between text-white">Suporte <i class="bi bi-headset"></i></li>
+                <li class="list-group-item d-flex justify-content-between text-white">Sair <i class="bi bi-box-arrow-right"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="saldo-section" class="container mt-4 section-box">
+        <h4 class="fw-bold text-white mb-3">Saldo</h4>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="saldo-card p-3 rounded">
+                    <h5 class="text-white fw-bold">Saldo em Débito</h5>
+                    <p class="saldo-valor">R$ 4.524,00</p>
+                    <small class="text-secondary">Disponível para uso imediato</small>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="saldo-card p-3 rounded">
+                    <h5 class="text-white fw-bold">Crédito Disponível</h5>
+                    <p class="saldo-valor">R$ 2.300,00</p>
+                    <small class="text-secondary">Fatura vence em: <b>12/03/2025</b></small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="postagens-section" class="container mt-4 section-box">
+        <h4 class="fw-bold text-white mb-3">Postagens</h4>
+
+        <div class="post-card p-3 mb-3 rounded shadow-sm bg-dark d-flex">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-pic">
+            <div class="ms-3 w-100">
+                <strong>UsuárioXyz123</strong>
+                <p class="m-0 text-secondary small">Uau! Comprei o BTC quando estava apenas... Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <div class="actions mt-2">
+                    <i class="bi bi-heart action-like"></i> 12
+                    <i class="bi bi-chat-left-text ms-3"></i> 4
+                    <i class="bi bi-share icon-share ms-3"></i> 1
+                </div>
+            </div>
+        </div>
+
+        <div class="post-card p-3 mb-3 rounded shadow-sm bg-dark d-flex">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-pic">
+            <div class="ms-3 w-100">
+                <strong>User@099</strong>
+                <p class="m-0 text-secondary small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, sequi?</p>
+                <div class="actions mt-2">
+                    <i class="bi bi-heart action-like"></i> 3
+                    <i class="bi bi-chat-left-text ms-3"></i> 0
+                    <i class="bi bi-share icon-share ms-3"></i> 1
+                </div>
+            </div>
+        </div>
+
+        <div class="post-card p-3 mb-3 rounded shadow-sm bg-dark d-flex">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-pic">
+            <div class="ms-3 w-100">
+                <strong>Carlo Emilion</strong>
+                <p class="m-0 text-secondary small">Olá, eu sou a Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error alias fugiat, quas cupiditate a deserunt explicabo perferendis debitis, obcaecati harum enim placeat optio corporis.</p>
+                <div class="actions mt-2">
+                    <i class="bi bi-heart action-like"></i> 7
+                    <i class="bi bi-chat-left-text ms-3"></i> 3
+                    <i class="bi bi-share icon-share ms-3"></i> 0
+                </div>
+            </div>
+        </div>
+
+        <div class="post-card p-3 mb-3 rounded shadow-sm bg-dark d-flex">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-pic">
+            <div class="ms-3 w-100">
+                <strong>Daniel Jay Park</strong>
+                <p class="m-0 text-secondary small">djpark@gmail.com</p>
+                <div class="actions mt-2">
+                    <i class="bi bi-heart action-like"></i> 22
+                    <i class="bi bi-chat-left-text ms-3"></i> 6
+                    <i class="bi bi-share icon-share ms-3"></i> 3
+                </div>
+            </div>
+        </div>
+
+        <div class="post-card p-3 mb-3 rounded shadow-sm bg-dark d-flex">
+            <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-pic">
+            <div class="ms-3 w-100">
+                <strong>Mark Rojas</strong>
+                <p class="m-0 text-secondary small">rojasmar@skiff.com</p>
+                <div class="actions mt-2">
+                    <i class="bi bi-heart action-like"></i> 5
+                    <i class="bi bi-chat-left-text ms-3"></i> 1
+                    <i class="bi bi-share icon-share ms-3"></i> 1
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="criptos-section" class="container mt-5 section-box">
+        <h4 class="fw-bold text-white mb-3">Criptomoedas</h4>
+
+        <div class="crypto-grid">
+            <!-- TODAS AS CRIPTOS MANTIDAS IGUAIS -->
+            <div class="crypto-slot filled"><strong>BTC</strong><span class="value">$45.678,90</span></div>
+            <div class="crypto-slot filled"><strong>ETH</strong><span class="value">$2.405</span></div>
+            <div class="crypto-slot filled"><strong>XRP</strong><span class="value">$2.196</span></div>
+            <div class="crypto-slot filled"><strong>BNB</strong><span class="value">$924.40</span></div>
+            <div class="crypto-slot filled"><strong>SLN</strong><span class="value">$144.69</span></div>
+            <div class="crypto-slot filled"><strong>USDC</strong><span class="value">$0.99</span></div>
+            <div class="crypto-slot filled"><strong>DGC</strong><span class="value">$0.15</span></div>
+            <div class="crypto-slot filled"><strong>TRON</strong><span class="value">$0.28</span></div>
+            <div class="crypto-slot filled"><strong>CDN</strong><span class="value">$0.45</span></div>
+            <div class="crypto-slot filled"><strong>STELLAR</strong><span class="value">$0.25</span></div>
+            <div class="crypto-slot filled"><strong>SUI</strong><span class="value">$1.70</span></div>
+            <div class="crypto-slot filled"><strong>Ver mais...</strong></div>
+        </div>
+    </section>
+
+    <section id="notificacoes-section" class="container mt-4 mb-5 section-box">
+        <h4 class="fw-bold text-white mb-3">Notificações</h4>
+
+        <div class="notify-card p-3 bg-dark rounded shadow-sm mb-2">
+            <strong>starryskies23 • 1d</strong>
+            <p class="m-0 text-secondary small">Você recebeu um Pix de starryskies23</p>
+        </div>
+
+        <div class="notify-card p-3 bg-dark rounded shadow-sm mb-2">
+            <strong>nebulanomad • 1d</strong>
+            <p class="m-0 text-secondary small">O seu Pix de R$ 100,00 foi enviado...</p>
+        </div>
+
+        <div class="notify-card p-3 bg-dark rounded shadow-sm mb-2">
+            <strong>emberecho • 2d</strong>
+            <p class="m-0 text-secondary small">Falha na transação para emberecho!</p>
+        </div>
+
+        <div class="notify-card p-3 bg-dark rounded shadow-sm mb-2">
+            <strong>E-Wallbank • 3d</strong>
+            <p class="m-0 text-secondary small">Você sabia que pode aumentar seu limite?</p>
+        </div>
+
+        <div class="notify-card p-3 bg-dark rounded shadow-sm mb-2">
+            <strong>shadowlynx • 4d</strong>
+            <p class="m-0 text-secondary small">Você recebeu um Pix de shadowlynx...</p>
+        </div>
+    </section>
+
+    <nav class="bottom-nav shadow-lg d-flex justify-content-around align-items-center">
+        <a href="#saldo-section" class="nav-link-summary"><i class="bi bi-house-door fs-4"></i></a>
+        <a href="#postagens-section" class="nav-link-summary"><i class="bi bi-file-text fs-4"></i></a>
+        <a href="#criptos-section" class="nav-link-summary"><i class="bi bi-currency-bitcoin fs-4"></i></a>
+        <a href="#notificacoes-section" class="nav-link-summary"><i class="bi bi-bell fs-4"></i></a>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
